@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="happynet",
-    version="0.0.1",
+    version="0.0.2",
     author="Sean Slater",
     author_email="seanslater@whatno.io",
     description="A command line tool for interacting with Happy Net Box",
@@ -15,6 +15,7 @@ setuptools.setup(
     url="https://github.com/spslater/happynetpy",
     license="MIT License",
     packages=setuptools.find_packages(),
+    install_requires=["blessed"],
     classifiers=[
         "Development Status :: 4 - Beta",
         "Programming Language :: Python :: 3",
